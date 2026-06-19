@@ -1,55 +1,55 @@
-// // // function add(...numbers) {
-// // //   console.log(numbers);
-// // // }
-// // // add(12, 13, 14);
-// // // ----------
-// // function sum(...numbers) {
-// //   let total = 0;
+function add(...numbers) {
+  console.log(numbers);
+}
+add(12, 13, 14);
+// ----------
+function sum(...numbers) {
+  let total = 0;
 
-// //   for (let number of numbers) {
-// //     total += number;
-// //   }
+  for (let number of numbers) {
+    total += number;
+  }
 
-// //   return total;
-// // }
+  return total;
+}
 
-// // // console.log(sum(10, 20));
-// // // console.log(sum(10, 20, 30));
-// // // console.log(sum(10, 20, 30, 40));
+console.log(sum(10, 20));
+console.log(sum(10, 20, 30));
+console.log(sum(10, 20, 30, 40));
 
-// // function allCustomer(...allnumbers) {
-// //   console.log(allnumbers);
-// // }
-// // allCustomer('shawon', 'rafi', 'hasan');
-// // // ------------------------
-// function add(...a) {
-//   console.log(a);
-// }
-// add(12, 14, 34, 65);
-// // sum of the numebr using rest parameter
-// function sum(...numbers) {
-//   let total = 0;
-//   for (let number of numbers) {
-//     total += number;
-//   }
-//   return ('total numbers is', total);
-// }
-// console.log('numbers of sum is:', sum(10, 20, 30));
-// // -----------product count
-// function addToCart(...product) {
-//   console.log(`total product is ${product.length}`);
-// }
-// addToCart('mouse', 'yearphone', 'laptop', 'keyboard');
-// // -----calculate the avarage
-// function avarage(...numbers) {
-//   let total = 0;
-//   for (let num of numbers) {
-//     total = total + num;
-//   }
-//   return total / numbers.length;
-// }
-// console.log('avarage o the numbers is:', avarage(12, 13, 14));
-// // --------------- calculate the total numebrs using arrow function in rest parmeters
+function allCustomer(...allnumbers) {
+  console.log(allnumbers);
+}
+allCustomer('shawon', 'rafi', 'hasan');
+// ------------------------
+function add(...a) {
+  console.log(a);
+}
+add(12, 14, 34, 65);
+// sum of the numebr using rest parameter
+function sum(...numbers) {
+  let total = 0;
+  for (let number of numbers) {
+    total += number;
+  }
+  return ('total numbers is', total);
+}
+console.log('numbers of sum is:', sum(10, 20, 30));
+// -----------product count
+function addToCart(...product) {
+  console.log(`total product is ${product.length}`);
+}
+addToCart('mouse', 'yearphone', 'laptop', 'keyboard');
+// -----calculate the avarage
+function avarage(...numbers) {
+  let total = 0;
+  for (let num of numbers) {
+    total = total + num;
+  }
+  return total / numbers.length;
+}
+console.log('avarage o the numbers is:', avarage(12, 13, 14));
+// --------------- calculate the total numebrs using arrow function in rest parmeters
 const sum = (...numbers) => {
   let total = 0;
   for (let num of numbers) {
@@ -58,3 +58,25 @@ const sum = (...numbers) => {
   return total;
 };
 console.log('sum of the numbers is:', sum(10, 20, 30, 40));
+// rest perameter + reduce
+function getNotification(user, ...message) {
+  console.log(`notification for ${user}`);
+  for (let mgs of message) {
+    console.log(mgs);
+  }
+}
+getNotification('rafi', 'money recievd', 'payment successful', 'footbal live');
+// ---------
+function max(...numbers) {
+  let maxNumber = numbers[0];
+
+  for (let num of numbers) {
+    if (num > maxNumber) {
+      maxNumber = num;
+    }
+  }
+
+  return maxNumber;
+}
+
+console.log(max(10, 20, 30, 40, 15));
