@@ -108,3 +108,7 @@ const copy = {
     ...user.address,
   },
 };
+// insert with array
+const arr = [2, 3, 4];
+
+const newArr = [1, ...arr];
