@@ -86,3 +86,18 @@ const updatedUser = {
 };
 
 console.log(updatedUser);
+// nested object problem using speard perater
+const user = {
+  name: 'Shawon',
+  address: {
+    city: 'Dhaka',
+  },
+};
+
+const copy = {
+  ...user,
+};
+
+copy.address.city = 'Khulna';
+
+console.log(user.address.city);
