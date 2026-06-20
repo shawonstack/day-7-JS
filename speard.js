@@ -112,3 +112,8 @@ const copy = {
 const arr = [2, 3, 4];
 
 const newArr = [1, ...arr];
+// interview question
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+console.log([...arr1, ...arr2]);
