@@ -101,3 +101,10 @@ const copy = {
 copy.address.city = 'Khulna';
 
 console.log(user.address.city);
+// nested bject safe methode
+const copy = {
+  ...user,
+  address: {
+    ...user.address,
+  },
+};
