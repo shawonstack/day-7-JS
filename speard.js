@@ -59,3 +59,30 @@ const user = {
 };
 
 console.log(user);
+// backend api
+const dbUser = {
+  name: 'Shawon',
+  email: 'shawon@gmail.com',
+};
+
+const updateData = {
+  age: 23,
+};
+
+const updatedUser = {
+  ...dbUser,
+  ...updateData,
+};
+console.log(updatedUser);
+// existing property ride
+const user = {
+  name: 'Shawon',
+  age: 23,
+};
+
+const updatedUser = {
+  ...user,
+  age: 25,
+};
+
+console.log(updatedUser);
