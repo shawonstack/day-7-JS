@@ -117,3 +117,19 @@ const arr1 = [1, 2];
 const arr2 = [3, 4];
 
 console.log([...arr1, ...arr2]);
+//  q 2
+const user = {
+  name: 'Shawon',
+  age: 23,
+};
+
+const updated = {
+  ...user,
+  age: 30,
+};
+
+console.log(updated);
+// q3
+const nums = [5, 10, 15];
+
+console.log(Math.max(...nums));
