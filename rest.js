@@ -9,7 +9,6 @@ function sum(...numbers) {
   for (let number of numbers) {
     total += number;
   }
-
   return total;
 }
 
